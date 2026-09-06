@@ -21,5 +21,3 @@ INSERT INTO system_access (id, access_name, password_hash)
 VALUES (1, 'Admin_Access', '$argon2id$v=19$m=65536,t=3,p=4$ARnhHOlRsjpAzJaWcPcYNw$QRolFHmr2B3o0de+Zb84MTO5Aycu8AhGpEqeQb5z23E');
 
 
-
-

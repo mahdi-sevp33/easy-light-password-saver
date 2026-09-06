@@ -1,25 +1,48 @@
 
 import random
 import string
+import sys 
+
+from services.auth import Auth
+
+from services.vault import Vault
 
 
-from services.auth import auth
+user=Auth()  #from file auth.py
+v=Vault()    #from file vault.py
 
-def entry_check():
 
-    bb=auth.autintication
-    if(bb==True):
-        return
+
+
+print("Welcome to our app")
+print("1: Change password")
+print("2: Enter app")
+
+choice = input("Please select an option (1 or 2): ")
+
+if choice == "1":
+    if user.register_user():
+        print("Password was successfully changed.")
     else:
-        print("your pass is wrong")
-        
+        print("Password changing failed.")
+
+elif choice == "2":
+    usernameen1=input("please enter your username: ")
+    passwordenv1=input("please enter your password entry: ")
+
+    if user.login_user(usernameen1,passwordenv1):
+        print("App opened successfully.")
+    else:
+        print("Access denied: Password is wrong.")
+        sys.exit()
+
+else:
+    # This handles invalid inputs (anything other than 1 or 2)
+    print("Invalid option selected. Please restart and choose 1 or 2.")
 
 
-print("welcome to our app");
+
 print("whats your name");
-
-
-entry_check()
 
 
 Name=input("name: ")
@@ -30,6 +53,26 @@ print("you want a special pass 1 or a random 2")
 # ///////////////////////////////////////////////////////////////
 
 stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+
+
+def checkstate(stateis):
+
+    if stateis!=2 and stateis!=1:
+        print("you might enter a number betwen 1 and 2")
+        return False
+    return True
+
+
+while True:
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+    if checkstate(stateis):
+        break
+
+    print("password saved truly")    
+    
+    
+
+
 path_length=int(input("please enter number of your charecktor between 6 & 20"))
 
 # ////////////////////////////////////////////////////////////////////////////////////////////
@@ -55,6 +98,7 @@ def status1():
 
     if sumall<6 or sumall>20:
         print("your path length must be beetwen 6 & 20: ")
+        sys.exit(1)
     else:
         password=[]
         for _ in range(a):
@@ -84,8 +128,10 @@ def status2():
 
     password="".join(random.choice(charachters) for _ in range(path_length));
 
-    print("your password is",password);
-
+    if password:
+    
+        print("your password is",password);
+    
     return  password
     
 
@@ -94,14 +140,14 @@ def status2():
 
 if(stateis==1):
     Pasw=status1()
+    
+    
+   
 if(stateis==2):
     Pasw=status2()
 
 
 
 #-----------------------------------------------------------------------------------------
-
-
-
 
 
