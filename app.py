@@ -14,9 +14,9 @@ v=Vault()    #from file vault.py
 
 
 
-print("Welcome to our app")
-print("1: Change password")
-print("2: Enter app")
+print("____Welcome to our app____")
+print("1: Change entry password")
+print("2: Enter app with current pass")
 
 choice = input("Please select an option (1 or 2): ")
 
@@ -44,8 +44,12 @@ else:
 
 print("whats your name");
 
+userName=input("name: ")
 
-Name=input("name: ")
+print("what is your email for this pass")
+
+Email=input("email: ")
+
 
 print("length of pass is between carector(6|20)");
 print("you want a special pass 1 or a random 2")
@@ -54,6 +58,7 @@ print("you want a special pass 1 or a random 2")
 
 stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
 
+#____for cheking our input is true 
 
 def checkstate(stateis):
 
@@ -63,7 +68,7 @@ def checkstate(stateis):
     return True
 
 
-while True:
+while True:   #تاوقتی که کاربرعدددرست روواردنکرده این چرخه ادامه پیداکند 
     stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
     if checkstate(stateis):
         break
@@ -78,12 +83,12 @@ path_length=int(input("please enter number of your charecktor between 6 & 20"))
 # ////////////////////////////////////////////////////////////////////////////////////////////
 
 
-Email="null@gmail.com"
 
 
 
 def status1():
 
+    
 
     a=int(input("amount number: "));
     b=int(input("amount letter: "));
@@ -117,13 +122,13 @@ def status1():
             
 
         print("your password is",password)
+        
 
         return password
          
 
 
 def status2():
-    
     charachters=string.ascii_letters + string.digits + string.punctuation;
 
     password="".join(random.choice(charachters) for _ in range(path_length));
@@ -131,23 +136,34 @@ def status2():
     if password:
     
         print("your password is",password);
+        
     
     return  password
     
 
 
 
-
 if(stateis==1):
     Pasw=status1()
-    
+
+
+    print(f'please add a note for your password with this name and email ${userName,Email}')
+    notes=input("note: ")
+    v.add_entry(userName,Email,Pasw,notes)    
     
    
 if(stateis==2):
     Pasw=status2()
 
+    print(f'please add a note for your password with this name and email ${userName,Email}')
+    notes=input("note: ")
+    v.add_entry(userName,Email,Pasw,notes)
+
 
 
 #-----------------------------------------------------------------------------------------
+
+
+
 
 
