@@ -13,7 +13,7 @@ class Vault:
         self.key = self._load_or_create_key()
         self.fernet = Fernet(self.key)   #ساخت کلیدی که پسوردراهش کندتابه صورت هش شده دردیتابیس ذخیره بشود
         self.db = secure_db_connect()  #برای اطمینان ازوجوددیتابیس واتصال به مریادی بی 
-        self.table=self.ensure_table()  #برایاطمینان از وجودجدولی که داده های رمزراذخیره کنیم درآن
+        self.table=self.ensure_table()  #یک باردرابتدای فراخوانی کلاس والت فراخوانی واطمینان حاصل میشودکه جدول برای ذخیره سازی اطلاعات کاربرساخته شده ووجوددارد
 
     def _load_or_create_key(self):
         if os.path.exists(self.key_path):
@@ -59,6 +59,7 @@ class Vault:
             conn.close()
 
     def add_entry(self, site, username,email, password_plain, notes=None):
+
         token = self.fernet.encrypt(password_plain.encode())
         conn = self.db.connect()
 
@@ -81,9 +82,12 @@ class Vault:
         conn = self.db.connect()
         try:
             cursor = conn.cursor(dictionary=True)
-            cursor.execute("SELECT id, site, email, username, created_at FROM pass_saver ORDER BY created_at DESC")
-
-            return cursor.fetchall()
+            cursor.execute("SELECT id, site, username, email ,password ,notes , created_at FROM pass_saver ORDER BY created_at DESC")
+            array1=cursor.fetchall()
+            for password in array1["password"]:
+                array1["password"]=self.fernet.decrypt(array1["password"])
+                
+            return array1
         finally:
             try:
                 cursor.close()
@@ -122,19 +126,21 @@ class Vault:
                 pass
             conn.close()
 
-    def get_entry_byemail(self, email):
-            conn = self.db.connect()
+    def get_entry_byemail(self,email):
+            conn=self.db.connect()
             try:
+               
                 cursor = conn.cursor()
-                cursor.execute("SELECT id, site, username, password, notes, created_at FROM pass_saver WHERE email = %s", (email,))
+                query="SELECT id, site, username, email ,password, notes, created_at FROM pass_saver WHERE email = %s"
+                cursor.execute(query, (email,))
                 row = cursor.fetchone()
-                if not row:
-                    return None
+                # if not row:
+                #     return None
     
                 # row: (id, site, login, password_blob, notes, created_at)
-                password_blob = row[3]
+                password_plain = row[4]
                 try:
-                    password_plain = self.fernet.decrypt(password_blob).decode()
+                    password_plain = self.fernet.decrypt(password_plain).decode()
                 except Exception:
                     password_plain = None
     
@@ -142,16 +148,33 @@ class Vault:
                     "id": row[0],
                     "site": row[1],
                     "login": row[2],
+                    "email": row[3],
                     "password": password_plain,
-                    "notes": row[4],
-                    "created_at": row[5],
+                    "notes": row[5],
+                    "created_at": row[6]
                 }
+            except Exception as e:
+                print(f'error ocurred {e}')
+                return None
             finally:
-                try:
-                    cursor.close()
-                except Exception:
-                    pass
-                conn.close()
+                if cursor:
+                    try:
+                        cursor.close()
+                    except:
+                        pass
+                if conn:
+                    try:
+                        conn.close()
+                    except:
+                        pass
+
+
+            # conn=self.db.connect()
+            # cursor=conn.cursor()
+            # cursor.execute("SELECT email FROM pass_saver")
+            # emails=cursor.fetchall()
+            # for email in emails:
+            #     print(email)
 
 
 

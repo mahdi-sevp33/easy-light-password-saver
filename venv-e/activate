@@ -1,0 +1,268 @@
+Script started on 2026-09-18 09:26:32+03:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="155" LINES="10"]
+[?2004h]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ source ./venv-e [K/source [C[C[C[1@ [1P[1P[1P[1P[1P[1P[1@a[1@c[1@t[1@i[1P[1P[1P[1P[1@s[1@o[1@u[1@r[1@c[1@e[C[C[1@ [C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P [1P [1P [1P [1P [1P a c t i v a t e 
+[?2004l[?2004h]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ source  ./venv-e/activate [1@b[1@i[1@n[1@/
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ source  ./venv-e/bin/activate [4P[C[C[C[C[C[C[C[C[C[4@bin/[C[C[C[C[C[C[C[C[C[4P[C[C[C[C[C[C[C[C[C[11Ppython3 app.py[C[1P./gradlew helppython3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com 
+error ocurred Could not process parameters: str(mahdilkdon@gmail.com ), it must be of type list, tuple or dict
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com
+error ocurred Could not process parameters: str(mahdilkdon@gmail.com), it must be of type list, tuple or dict
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com
+error ocurred Could not process parameters: str(mahdilkdon@gmail.com), it must be of type list, tuple or dict
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com 
+error ocurred 'NoneType' object is not subscriptable
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdin@gmail.com
+error ocurred 'NoneType' object is not subscriptable
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py [Kpython3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com
+error ocurred 'NoneType' object is not subscriptable
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com
+error ocurred list index out of range
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mahdilkdon@gmail.com
+error ocurred 'NoneType' object is not subscriptable
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 2
+please enter your username: mahdi
+please enter your password entry: 361ab
+Access denied: Password is wrong.
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 2
+please enter your username: mahdi
+please enter your password entry: 1234
+App opened successfully.
+whats your name
+name: mm
+what is your email for this pass
+email: mm@gmail.com
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  2
+if you want a customize path enter 1 else enter 2:  2
+please enter number of your charecktor between 6 & 2012
+your password is P"I`,&Z@%%zO
+please add a note for your password with this name and email $('mm', 'mm@gmail.com')
+note: jonam
+site: hwbio
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py [15@source  ./venv-e/bin/activate[C[15Ppython3 app.py[C
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 2
+please enter your username: mahdi
+please enter your password entry: 1234
+App opened successfully.
+whats your name
+name: mmm   mm
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l\____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+Invalid option selected. Please restart and choose 1 or 2 or 3.
+whats your name
+name: mahdi
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[0

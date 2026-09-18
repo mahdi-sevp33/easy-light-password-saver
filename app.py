@@ -15,10 +15,12 @@ v=Vault()    #from file vault.py
 
 
 print("____Welcome to our app____")
+
 print("1: Change entry password")
 print("2: Enter app with current pass")
+print("3: Showing informations")
 
-choice = input("Please select an option (1 or 2): ")
+choice = input("Please select an option (1 or 2 or 3): ")
 
 if choice == "1":
     if user.register_user():
@@ -35,10 +37,18 @@ elif choice == "2":
     else:
         print("Access denied: Password is wrong.")
         sys.exit()
+elif choice == "3":
+    print("please enter a valid email")
+    emailp=input("Email: ")
+    resault=v.get_entry_byemail(emailp)
+    print(resault)
+
 
 else:
     # This handles invalid inputs (anything other than 1 or 2)
-    print("Invalid option selected. Please restart and choose 1 or 2.")
+    print("Invalid option selected. Please restart and choose 1 or 2 or 3.")
+
+
 
 
 
@@ -149,7 +159,8 @@ if(stateis==1):
 
     print(f'please add a note for your password with this name and email ${userName,Email}')
     notes=input("note: ")
-    v.add_entry(userName,Email,Pasw,notes)    
+    site=input("site: ")
+    v.add_entry(site,userName,Email,Pasw,notes)    
     
    
 if(stateis==2):
@@ -157,13 +168,12 @@ if(stateis==2):
 
     print(f'please add a note for your password with this name and email ${userName,Email}')
     notes=input("note: ")
-    v.add_entry(userName,Email,Pasw,notes)
+    site=input("site: ")
+    v.add_entry(site,userName,Email,Pasw,notes)
 
 
 
 #-----------------------------------------------------------------------------------------
-
-
 
 
 
