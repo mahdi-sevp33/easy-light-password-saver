@@ -18,9 +18,12 @@ print("____Welcome to our app____")
 
 print("1: Change entry password")
 print("2: Enter app with current pass")
-print("3: Showing informations")
+print("3: if you want give information a field by a specific email")
+print("4: if you want to see list entries")
+print("5: if you want give information a field by a specific site")
+print("6: if you want give information a field by a specific username")
 
-choice = input("Please select an option (1 or 2 or 3): ")
+choice = input("Please select an option (1 or 2 or 3 or 4 or 5): ")
 
 if choice == "1":
     if user.register_user():
@@ -37,19 +40,49 @@ elif choice == "2":
     else:
         print("Access denied: Password is wrong.")
         sys.exit()
+
 elif choice == "3":
     print("please enter a valid email")
     emailp=input("Email: ")
-    resault=v.get_entry_byemail(emailp)
-    print(resault)
+    userdata1=v.get_entry_byemail(emailp)
+
+    if userdata1 is not None:
+
+        print(f"ID: {userdata1['id']} | Site: {userdata1['site']} | User: {userdata1['name']} | Email: {userdata1['email']} | Pass: {userdata1['password']} | notes: {userdata1['notes']} | created_at: {userdata1['created_at']}")
+    else:
+        print("your data by this email was not found")
+
+
+elif choice=="4":
+    print("your all information is:")
+    v.list_entries()
+
+
+elif choice=="5":
+    print("please enter site: ")
+    site=input("Site: ")
+    userdata=v.get_entry_bysite(site)
+
+    if userdata is not None:
+        print(f"ID: {userdata['id']} | Site: {userdata['site']} | User: {userdata['name']} | Email: {userdata['email']} | Pass: {userdata['password']} | notes: {userdata['note']} | created_at: {userdata['create_at']}")
+    else:
+        print("password from that site was not found ")
+
+
+elif choice=="6":
+    print("please enter your wanted name")
+    name=input("Name: ")
+    userdata2=v.get_entry_byusername(name)
+
+    if userdata2 is not None:
+        print(f"ID: {userdata2['id']} | Site: {userdata2['site']} | User: {userdata2['name']} | Email: {userdata2['email']} | Pass: {userdata2['password']} | notes: {userdata2['notes']} | created_at: {userdata2['created_at']}")
+    else:
+        print("the user by that information was not found")
 
 
 else:
     # This handles invalid inputs (anything other than 1 or 2)
-    print("Invalid option selected. Please restart and choose 1 or 2 or 3.")
-
-
-
+    print("Invalid option selected. Please restart and choose 1 or 2 or 3 or 4 or 5 or 6.")
 
 
 print("whats your name");

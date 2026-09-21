@@ -70,7 +70,7 @@ class Vault:
                 (site, username,email, token, notes),
             )
             conn.commit()
-            return cursor.lastrowid
+            return cursor.lastarray1ayid
         finally:
             try:
                 cursor.close()
@@ -83,11 +83,31 @@ class Vault:
         try:
             cursor = conn.cursor(dictionary=True)
             cursor.execute("SELECT id, site, username, email ,password ,notes , created_at FROM pass_saver ORDER BY created_at DESC")
-            array1=cursor.fetchall()
-            for password in array1["password"]:
-                array1["password"]=self.fernet.decrypt(array1["password"])
+            array1ay1=cursor.fetchall()   #array1ay1 is a list of tuples
+            for array1 in array1ay1:
+                id= array1['id']
+                site=array1['site']
+                name=array1['username']
+                email=array1['email']
+                password=array1['password']
+                note=array1['notes']
+
+                passworddecrypted=None
+
+                if password :
+                    try:
+                        passworddecrypted=self.fernet.decrypt(password).decode()
+
+                    except Exception as err:
+                        print(f"password is wrong {err}")
+                        passworddecrypted="DECRYPTION_ERROR"
+
+
+
+
+                print(f"ID: {id} | Site: {site} | User: {name} | Email: {email} | Pass: {passworddecrypted} | notes: {note}")
+
                 
-            return array1
         finally:
             try:
                 cursor.close()
@@ -98,27 +118,31 @@ class Vault:
     def get_entry_bysite(self, site):
         conn = self.db.connect()
         try:
-            cursor = conn.cursor()
-            cursor.execute("SELECT id, site, username, password, notes, created_at FROM pass_saver WHERE site = %s", (site,))
-            row = cursor.fetchone()
-            if not row:
+            cursor = conn.cursor(dictionary=True)
+            cursor.execute("SELECT id, site, username, email, password, notes, created_at FROM pass_saver WHERE site = %s", (site,))
+            array1ay = cursor.fetchone()
+
+            pass_hashed=None
+
+            try:
+                pass_hashed=self.fernet.decrypt(array1ay['password']).decode()
+            except Exception as err:
+                print(f"an error was acured {err}")
+                pass_hashed="DECRYPTION_ERROR"
+
+            if not array1ay:
                 return None
 
-            # row: (id, site, login, password_blob, notes, created_at)
-            password_blob = row[3]
-            try:
-                password_plain = self.fernet.decrypt(password_blob).decode()
-            except Exception:
-                password_plain = None
-
-            return {
-                "id": row[0],
-                "site": row[1],
-                "login": row[2],
-                "password": password_plain,
-                "notes": row[4],
-                "created_at": row[5],
+            return{     
+                "id": array1ay['id'],
+                "site":array1ay['site'],
+                "name":array1ay['username'],
+                "email":array1ay['email'],
+                "password":pass_hashed,
+                "note":array1ay['notes'],
+                "create_at":array1ay['created_at']
             }
+
         finally:
             try:
                 cursor.close()
@@ -126,42 +150,46 @@ class Vault:
                 pass
             conn.close()
 
+
     def get_entry_byemail(self,email):
-            conn=self.db.connect()
-            try:
+
+        conn=self.db.connect()
+        try:
                
-                cursor = conn.cursor()
-                query="SELECT id, site, username, email ,password, notes, created_at FROM pass_saver WHERE email = %s"
-                cursor.execute(query, (email,))
-                row = cursor.fetchone()
-                # if not row:
-                #     return None
-    
-                # row: (id, site, login, password_blob, notes, created_at)
-                password_plain = row[4]
-                try:
-                    password_plain = self.fernet.decrypt(password_plain).decode()
-                except Exception:
-                    password_plain = None
-    
-                return {
-                    "id": row[0],
-                    "site": row[1],
-                    "login": row[2],
-                    "email": row[3],
-                    "password": password_plain,
-                    "notes": row[5],
-                    "created_at": row[6]
-                }
-            except Exception as e:
-                print(f'error ocurred {e}')
+            cursor = conn.cursor(dictionary=True)
+            query="SELECT id, site, username, email ,password, notes, created_at FROM pass_saver WHERE email = %s"
+            cursor.execute(query, (email,))
+            array1 = cursor.fetchone()
+
+            password_decrypted=None
+            
+            try:
+                password_decrypted=self.fernet.decrypt(array1['password'])
+
+            except Exception as err:
+                print(f"false was accured {err}")
+                password_decrypted="DECRYPTION_ERROR"
+
+
+            if not array1:
                 return None
-            finally:
-                if cursor:
-                    try:
-                        cursor.close()
-                    except:
-                        pass
+
+            return{
+
+                "id":array1['id'],
+                "site":array1['site'],
+                "name": array1['username'],
+                "email": array1['email'],
+                "password": password_decrypted,
+                "notes":array1['notes'],
+                "created_at": array1['created_at']
+            }
+                
+            # print(f"ID: {id} | Site: {site} | User: {name} | Email: {email} | Pass: {password_decrypted} | notes: {notes} | created_at: {created_at}")
+
+        finally:
+                
+                cursor.close()
                 if conn:
                     try:
                         conn.close()
@@ -169,44 +197,40 @@ class Vault:
                         pass
 
 
-            # conn=self.db.connect()
-            # cursor=conn.cursor()
-            # cursor.execute("SELECT email FROM pass_saver")
-            # emails=cursor.fetchall()
-            # for email in emails:
-            #     print(email)
-
-
 
     def get_entry_byusername(self, username):
                 conn = self.db.connect()
+
                 try:
-                    cursor = conn.cursor()
-                    cursor.execute("SELECT id, site, username, password, notes, created_at FROM pass_saver WHERE username = %s", (username,))
-                    row = cursor.fetchone()
-                    if not row:
+
+                    cursor = conn.cursor(dictionary=True)
+                    cursor.execute("SELECT id, site, username, email, password, notes, created_at FROM pass_saver WHERE username = %s", (username,))
+                    array1ay = cursor.fetchone()
+
+                    if not array1ay:
                         return None
         
-                    # row: (id, site, login, password_blob, notes, created_at)
-                    password_blob = row[3]
+                    # array1ay: (id, site, login, password_blob, notes, created_at)
+                    password_plain=None
                     try:
-                        password_plain = self.fernet.decrypt(password_blob).decode()
+                        password_plain = self.fernet.decrypt(array1ay['password']).decode()
                     except Exception:
                         password_plain = None
         
                     return {
-                        "id": row[0],
-                        "site": row[1],
-                        "login": row[2],
+                        "id": array1ay['id'],
+                        "site": array1ay['site'],
+                        "name": array1ay['username'],
+                        "email": array1ay['email'],
                         "password": password_plain,
-                        "notes": row[4],
-                        "created_at": row[5],
+                        "notes": array1ay['notes'],
+                        "created_at": array1ay['created_at']
                     }
+
+                
                 finally:
                     try:
                         cursor.close()
                     except Exception:
                         pass
                     conn.close()
-
-

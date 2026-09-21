@@ -265,4 +265,316 @@ Traceback (most recent call last):
     stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: invalid literal for int() with base 10: ''
-[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[0
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+Please select an option (1 or 2 or 3): 3
+please enter a valid email
+Email: mm@gmail.com
+{'id': 7, 'site': 'hwbio', 'login': 'mm', 'email': 'mm@gmail.com', 'password': 'P"I`,&Z@%%zO', 'notes': 'jonam', 'created_at': datetime.datetime(2026, 9, 18, 10, 17, 1)}
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 69, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ git stats [K[K[Ktus 
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   .env[m
+	[31mmodified:   app.py[m
+	[31mmodified:   services/vault.py[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mvenv-e/activate[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ f[Kgit add .
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ git commit -m "joon[K[K[K[Klist wq[Kas completed [K"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"i" "[1P"n" "l"i"n"e" "4"1" "a"t" "a"p"p"."p"y" "w"e" "c"a"n" "g"e"6"t" "[1P"[1P"[1P"t" "p"a"s"s"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"u"s"e" "f"u"n"c"t"i"o"n" "g"e"t"_"e"n"t"r"y"_"b"y" "[1P"_"e"m"a"i"l" "a"n" [A(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd" "g"i"v"e" "t"h"e" "p"a"s"s"w"o"r"d" "[1P"[C 
+[?2004l[main 4359c22] in line 41 at app.py we can use function get_entry_by_email and give the password
+ 4 files changed, 329 insertions(+), 31 deletions(-)
+ create mode 100644 venv-e/activate
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ elif[K[K[K[K
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ git commit -m "in line 41 at app.py we can use function get_entry_by_email and give the password" 
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   app.py[m
+	[31mmodified:   venv-e/activate[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ git commit -m "in line 41 at app.py we can use function get_entry_by_email and give the password" [A(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus [4@python3 app.py[C
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+Please select an option (1 or 2 or 3 or 4): 4
+your all information is:
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 49, in <module>
+    v.list_entries()
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/services/vault.py", line 87, in list_entries
+    for password in array1["password"]:
+                    ~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+Please select an option (1 or 2 or 3 or 4): 4
+your all information is:
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 49, in <module>
+    v.list_entries()
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/services/vault.py", line 88, in list_entries
+    row[4]=self.fernet.decrypt(row[4])
+                               ~~~^^^
+KeyError: 4
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+Please select an option (1 or 2 or 3 or 4): 4
+your all information is:
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 49, in <module>
+    v.list_entries()
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/services/vault.py", line 88, in list_entries
+    pas=row[4]
+        ~~~^^^
+KeyError: 4
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ [K(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+Please select an option (1 or 2 or 3 or 4): 4
+your all information is:
+ID: 7 | Site: hwbio | User: mm | Email: mm@gmail.com | Pass: P"I`,&Z@%%zO | notes: jonam
+ID: 6 | Site: dlk | User: lmnop | Email: fight@gmail.com | Pass: r(5;OY'cjy?P | notes: kkkkkkkkkkkk
+ID: 5 | Site: kalim | User: friend@gmail.com | Email: Fdmu"<P+8+&! | Pass: kkkkkkkkkkkk | notes: None
+ID: 4 | Site: mamad | User: ebram@gmail.com | Email: vX+vF#>hLze[ | Pass: jon man jan khodet | notes: None
+ID: 3 | Site: milan | User: mahdilkdon@gmail.com | Email: &)KbM9*w60*\ | Pass: 3r4fgtbgnh  | notes: None
+ID: 2 | Site: mmj | User: joon@@gmgm | Email: L'Wo[|MeoMS|{=]xekWX | Pass: koli nabashj | notes: None
+ID: 1 | Site: mmmjfkl | User: ekrfjg | Email: uEUG4`PPrWn\J | Pass: oxkirjuhg | notes: None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 74, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py git commit -m "in line 41 at app.py we can use function get_entry_by_email and give the password" [A(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kpython3 app.py [K
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+Please select an option (1 or 2 or 3 or 4): 4
+your all information is:
+ID: 7 | Site: hwbio | User: mm | Email: mm@gmail.com | Pass: P"I`,&Z@%%zO | notes: jonam
+ID: 6 | Site: dlk | User: lmnop | Email: fight@gmail.com | Pass: r(5;OY'cjy?P | notes: kkkkkkkkkkkk
+ID: 5 | Site: kalim | User: friend@gmail.com | Email: Fdmu"<P+8+&! | Pass: kkkkkkkkkkkk | notes: None
+ID: 4 | Site: mamad | User: ebram@gmail.com | Email: vX+vF#>hLze[ | Pass: jon man jan khodet | notes: None
+ID: 3 | Site: milan | User: mahdilkdon@gmail.com | Email: &)KbM9*w60*\ | Pass: 3r4fgtbgnh  | notes: None
+ID: 2 | Site: mmj | User: joon@@gmgm | Email: L'Wo[|MeoMS|{=]xekWX | Pass: koli nabashj | notes: None
+ID: 1 | Site: mmmjfkl | User: ekrfjg | Email: uEUG4`PPrWn\J | Pass: oxkirjuhg | notes: None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 74, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+Please select an option (1 or 2 or 3 or 4): 
+Invalid option selected. Please restart and choose 1 or 2 or 3.
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 74, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: Showing informations
+4: if you want to see list entries
+5: if you want give information a field by a specific email
+Please select an option (1 or 2 or 3 or 4 or 5): 5
+This is your information
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 54, in <module>
+    v.get_entry_byemail()
+TypeError: Vault.get_entry_byemail() missing 1 required positional argument: 'email'
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: if you want give information a field by a specific email
+4: if you want to see list entries
+5: 
+Please select an option (1 or 2 or 3 or 4 or 5): 3
+please enter a valid email
+Email: mah  m@gmail.com
+error ocurred 'int' object is not subscriptable
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 79, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l\[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ \
+[?2004l[?2004h> \python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: if you want give information a field by a specific email
+4: if you want to see list entries
+5: 
+Please select an option (1 or 2 or 3 or 4 or 5): 
+Invalid option selected. Please restart and choose 1 or 2 or 3.
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 79, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: if you want give information a field by a specific email
+4: if you want to see list entries
+5: 
+Please select an option (1 or 2 or 3 or 4 or 5): 3
+please enter a valid email
+Email: mm@gmail.com
+error ocurred 'int' object is not subscriptable
+None
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 79, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ python3 app.py 
+[?2004l____Welcome to our app____
+1: Change entry password
+2: Enter app with current pass
+3: if you want give information a field by a specific email
+4: if you want to see list entries
+5: 
+Please select an option (1 or 2 or 3 or 4 or 5): 3
+please enter a valid email
+Email: mm@gmail.com
+error ocurred 'int' object is not subscriptable
+whats your name
+name: 
+what is your email for this pass
+email: 
+length of pass is between carector(6|20)
+you want a special pass 1 or a random 2
+if you want a customize path enter 1 else enter 2:  
+Traceback (most recent call last):
+  File "/home/mahdi/Documents/Documents/save-autumat-pass/app.py", line 78, in <module>
+    stateis=int(input("if you want a customize path enter 1 else enter 2:  "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/save-autumat-pass[00m$ 
+[?2004l[?2004h(venv-e) ]0;mahdi@mahdi-Aspire-A515-57: ~/Documents/Documents/save-autumat-pass[01;32mmahdi@mahdi-Aspire-A515-57[00m:[01;34m~/Documents/Documents/s
